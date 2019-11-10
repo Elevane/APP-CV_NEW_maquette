@@ -2,10 +2,14 @@
 
 namespace App\Entity;
 
+use App\Entity\Image;
+use DateTime;
+use Doctrine\ORM\Mapping as ORM;
+
 /**
  * class Article
- * @package App\entity
- * @ORM\Entity(RepositoryClass="App\Repository\ArticleRepository")
+ * @package App\Entity
+ * @ORM\Entity(repositoryClass="App\Repository\ArticleRepository")
  */
 class Article{
 
@@ -17,19 +21,24 @@ class Article{
     private $id;
 
     /**
-     * @ORM\Column(type="string", name="titre",length=50 nullable=false)
+     * @ORM\Column(type="string", name="titre",length=50, nullable=false)
      */
     private $titre;
 
     /**
-     * @ORM\Column(type="string", name="texte",length=1000 nullable=false)
+     * @ORM\Column(type="string", name="texte",length=1000, nullable=false)
      */
     private $texte;
+    /**
+     * @var \DateTime
+     * @ORM\Column(name="date", type="datetime", nullable=true)
+     */
+    private $date;
 
     /**
      * @var \image
-     * @ORM\OneToMany(targetEntity="App\Entity\Image")
-     * @ORM\JoinColumn(referencedColumnName="id",name="imageId", nullable=true)
+     * @ORM\ManyToOne(targetEntity="App\Entity\Image", inversedBy="image")
+     * @ORM\Column(name="imageId")
      */
     private $imageId;
 

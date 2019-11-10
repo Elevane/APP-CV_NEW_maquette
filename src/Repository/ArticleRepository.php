@@ -2,6 +2,11 @@
 
 namespace App\Repository;
 
-class ArticleRepository{
+
+
+use Doctrine\ORM\EntityRepository;
+
+class ArticleRepository extends EntityRepository {
+
 
 }
