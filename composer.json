@@ -12,7 +12,10 @@
         "symfony/framework-bundle": "4.3.*",
         "symfony/orm-pack": "^1.0",
         "symfony/twig-bundle": "4.3.*",
+<<<<<<< HEAD
         "symfony/webpack-encore-bundle": "^1.7",
+=======
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
         "symfony/yaml": "4.3.*"
     },
     "require-dev": {

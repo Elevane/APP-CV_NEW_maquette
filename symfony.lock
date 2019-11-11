@@ -111,9 +111,12 @@
             "./config/packages/sensio_framework_extra.yaml"
         ]
     },
+<<<<<<< HEAD
     "symfony/asset": {
         "version": "v4.3.6"
     },
+=======
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
     "symfony/cache": {
         "version": "v4.3.6"
     },
@@ -279,6 +282,7 @@
             "ref": "dae9b39fd6717970be7601101ce5aa960bf53d9a"
         }
     },
+<<<<<<< HEAD
     "symfony/webpack-encore-bundle": {
         "version": "1.0",
         "recipe": {
@@ -297,6 +301,8 @@
             "./webpack.config.js"
         ]
     },
+=======
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
     "symfony/yaml": {
         "version": "v4.3.6"
     },

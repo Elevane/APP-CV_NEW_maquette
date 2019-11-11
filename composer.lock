@@ -4,7 +4,11 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
+<<<<<<< HEAD
     "content-hash": "44f1ced6c0471650f103f31ab82be50b",
+=======
+    "content-hash": "96dd8c8d2429b60cae0f59f84e1bd0fb",
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -1609,6 +1613,7 @@
             "time": "2019-10-16T18:54:45+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/asset",
             "version": "v4.3.6",
             "source": {
@@ -1665,6 +1670,8 @@
             "time": "2019-08-03T21:50:52+00:00"
         },
         {
+=======
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
             "name": "symfony/cache",
             "version": "v4.3.6",
             "source": {
@@ -3160,6 +3167,7 @@
         },
         {
             "name": "symfony/service-contracts",
+<<<<<<< HEAD
             "version": "v1.1.8",
             "source": {
                 "type": "git",
@@ -3170,6 +3178,18 @@
                 "type": "zip",
                 "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
                 "reference": "ffc7f5692092df31515df2a5ecf3b7302b3ddacf",
+=======
+            "version": "v1.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/service-contracts.git",
+                "reference": "ffcde9615dc5bb4825b9f6aed07716f1f57faae0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/ffcde9615dc5bb4825b9f6aed07716f1f57faae0",
+                "reference": "ffcde9615dc5bb4825b9f6aed07716f1f57faae0",
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
                 "shasum": ""
             },
             "require": {
@@ -3214,7 +3234,11 @@
                 "interoperability",
                 "standards"
             ],
+<<<<<<< HEAD
             "time": "2019-10-14T12:27:06+00:00"
+=======
+            "time": "2019-09-17T11:12:18+00:00"
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
         },
         {
             "name": "symfony/stopwatch",
@@ -3562,6 +3586,7 @@
             "time": "2019-08-22T07:33:08+00:00"
         },
         {
+<<<<<<< HEAD
             "name": "symfony/webpack-encore-bundle",
             "version": "v1.7.1",
             "source": {
@@ -3616,6 +3641,8 @@
             "time": "2019-11-10T13:02:28+00:00"
         },
         {
+=======
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
             "name": "symfony/yaml",
             "version": "v4.3.6",
             "source": {

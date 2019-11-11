@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 #site:
 #    path: /
 #    controller: App\Controller\DefaultController::site
+=======
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+>>>>>>> 095a59681bedff48097d114cb9a095debee3f288
