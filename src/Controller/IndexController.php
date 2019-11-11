@@ -18,11 +18,8 @@ class IndexController extends AbstractController {
         $articles = $em->getRepository(Article::class)->findAll();
 
 
-<<<<<<< HEAD
+
         return $this->render('site/index.html.twig', [
-=======
-        return $this->render('index/index.html.twig', [
->>>>>>> 095a59681bedff48097d114cb9a095debee3f288
 
             'articles' => $articles,
 
