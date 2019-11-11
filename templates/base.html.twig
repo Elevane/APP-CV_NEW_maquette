@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
-<<<<<<< HEAD
+
         <meta charset="UTF-8">
         <meta name="keywords" content="CV, HTML, CSS, PHP, Javascript">
         <meta name="author" content="AUBRY Bastien">
         <meta name="description" content="site CV-Curriculum vitæ, de Bastien AUBRY">
         <title>Curriculum vitæ-AUBRY Bastien</title>
-        <link href="../assets/css/style.css" rel="stylesheet" type="text/css">
-        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        {% block stylesheets %}
+            {# 'app' must match the first argument to addEntry() in webpack.config.js #}
+            {{ encore_entry_link_tags('app') }}
+
+            <!-- Renders a link tag (if your module requires any CSS)-->
+                 <link rel="stylesheet" href="/build/app.css">
+        {% endblock %}
     </head>
     <body>
     {% include 'site/menu.html.twig' %}
