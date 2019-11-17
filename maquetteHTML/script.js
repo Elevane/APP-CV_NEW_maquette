@@ -29,3 +29,13 @@ var btncontact = document.getElementById('acontact');
  btncontact.addEventListener('click', function(){
 	contact.scrollIntoView({behavior: "smooth"});
 })
+
+
+$('.btnT').on('click', function(){
+   
+   $(this).addClass('active');
+   $('.active').css('background-color',"RGB(32,38,46)");
+
+  });
+
+  
