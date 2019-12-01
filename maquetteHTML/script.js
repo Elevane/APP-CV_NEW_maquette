@@ -33,9 +33,23 @@ var btncontact = document.getElementById('acontact');
 
 $('.btnT').on('click', function(){
    
-   $(this).addClass('active');
-   $('.active').css('background-color',"RGB(32,38,46)");
+   if($(this).hasClass("unativeButton")){
+   	console.log("unactive");
+   	$(this).removeClass("unativeButton");
+   	$(this).addClass("activeButton");
+   }
+   else if(!$(this).hasClass("unativeButton")){
+	   console.log("ative");
+	   $(this).removeClass("activeButton");
+	   $(this).addClass("unativeButton");
+   }
 
   });
+
+
+function adjust_textarea(h) {
+	h.style.height = "20px";
+	h.style.height = (h.scrollHeight)+"px";
+}
 
   
