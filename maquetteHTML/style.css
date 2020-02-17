@@ -1,0 +1,376 @@
+/**
+IMPORTS
+*/
+@import url('font/Roboto/Roboto-Light.ttf');
+@import url('font/Tomorrow/Tomorrow-Light.ttf');
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+/**@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+/**  */
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: 0;
+    font-family: 'Tomorrow','Roboto', sans-serif;
+    color: RGB(230, 230,230);
+}
+#contactmebtn{
+    padding: 20px;
+    font-size: 30px;
+    color: #BC4949;
+    border: 0.3px solid #BC4949;
+    margin-top: 50px;
+}
+#contactmebtn:hover{
+    border: 0.5px solid black;
+    background-color:#BC4949;
+    color: RGB(0,0,0);
+    cursor: pointer;
+}
+html{
+    background-color:RGB(0,0,0);
+}
+body{ display: flex;
+flex-direction: column;
+    align-items: center;}
+
+h1{
+    font-size: 70px;
+    padding-bottom: 30px;
+    text-transform: uppercase;
+    margin: 30px;
+}
+
+#body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul{
+    list-style-type: none;
+    width: 40%;
+    height: 100%;
+}
+#nav{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+}
+nav{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: space-around;
+    background-color: RGB(0,0,0,0.9);
+}
+.menu{
+    
+    
+}
+li > a > img{
+    width: 15px;
+    height: 15px;
+}
+a{
+    
+    text-decoration: none;
+    color: RGB(255,255,255, 0.7);
+    
+    
+}
+
+.trait{
+    border-bottom: azure solid 1px;
+    width: 85%;
+    margin: 50px;
+    
+}
+nav ul, a{
+    font-size: 12px;
+}
+nav ul li a:hover{
+    color: grey;
+}
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+   
+}
+nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    
+}
+.menu:hover{
+    background-color: RGB(42,42,42, 0.3);
+}
+
+/*  SECTION ABOUT*/
+
+#about{
+    height: 960px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    align-items: center;
+
+    
+}
+
+#about article{
+    display: flex;
+    flex-direction: row;
+
+}
+#about article p{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about article img{
+    width: 175px;
+    height: 250px;
+}
+
+/**/
+
+#skills{
+    height: 960px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    }
+#skills article{
+   width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+#skills li img, #skills li div img{
+    width: 30px;
+    height: 20px;
+}
+#skills article ul{
+   
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    
+    flex-direction: column;
+    
+}
+#skills article ul li {
+    display: flex;
+    width: 300px;
+    height: 40px;
+    margin-bottom: 15px;
+}
+
+/********/
+#projects{
+
+    height: 960px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+#projects img{
+    width: 250px;
+    height: 300px;
+    margin: 30px;
+
+    border: 3px solid white;
+    border-radius: 3px;
+
+}
+
+#projects img:hover{
+    opacity: 0.5;
+
+}
+#projects article{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+#projects > ul {
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    align-items: center;
+    justify-content: flex-start;
+    
+    
+}
+#projects > ul > li{
+    padding-right: 20px;
+    
+}
+
+
+#projects article ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#blog{
+
+    height: 960px;
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px;
+}
+
+#blog img{
+    width: 250px;
+    height: 300px;
+    margin: 30px;
+    border: 3px solid white;
+    border-radius: 3px;
+
+}
+#blog article {
+    display: flex;
+    align-items: center;
+
+}
+#blog article p,#blog h3{
+
+    margin: 30px;
+
+
+}
+
+
+#contact{
+
+    height: 960px;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.form-style-4{
+    width: 450px;
+    font-size: 16px;
+    background: black;
+    padding: 30px 30px 15px 30px;
+    border: 5px solid white;
+}
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button],
+.form-style-4 input[type=text],
+.form-style-4 input[type=email],
+.form-style-4 textarea,
+.form-style-4 label
+{
+    font-family: Tomorrow, "Times New Roman", Times, serif;
+    font-size: 16px;
+    color: #fff;
+
+}
+.form-style-4 label {
+    display:block;
+    margin-bottom: 10px;
+}
+.form-style-4 label > span{
+    display: inline-block;
+    float: left;
+    width: 150px;
+}
+.form-style-4 input[type=text],
+.form-style-4 input[type=email]
+{
+    background: transparent;
+    border: none;
+    border-bottom: 1px dashed white;
+    width: 275px;
+    outline: none;
+    padding: 0px 0px 0px 0px;
+    font-style: italic;
+}
+.form-style-4 textarea{
+    font-style: italic;
+    padding: 0px 0px 0px 0px;
+    background: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 1px dashed white;
+    width: 275px;
+    overflow: hidden;
+    resize:none;
+    height:20px;
+}
+
+.form-style-4 textarea:focus,
+.form-style-4 input[type=text]:focus,
+.form-style-4 input[type=email]:focus,
+.form-style-4 input[type=email] :focus
+{
+    border-bottom: 1px dashed black;
+}
+
+.form-style-4 input[type=submit],
+.form-style-4 input[type=button]{
+    background: black;
+    border: 1px solid white;
+    padding: 8px 10px 8px 10px;
+    border-radius: 5px;
+    color: white;
+}
+.form-style-4 input[type=submit]:hover,
+.form-style-4 input[type=button]:hover{
+    background: white;
+    color: black;
+}
+footer{
+    width: 100%;
+    height: 250px;
+    background-color: RGB(32,38,46);
+}
+
+.activeButton{
+    color:black;
+    background-color: antiquewhite;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 3px;}
+
+.unativeButton{
+    color:white;
+    background-color: black;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 3px;
+}
+
