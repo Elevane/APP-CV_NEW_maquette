@@ -36,34 +36,116 @@ var btncontact = document.getElementById('acontact');
 })
 
 
-/*$('.btnT').on('click', function(){
-   
-   if($(this).hasClass("unativeButton")){
-    console.log("unactive");
-    $(this).removeClass("unativeButton");
-    $(this).addClass("activeButton");
-   }
-   else if(!$(this).hasClass("unativeButton")){
-       console.log("ative");
-       $(this).removeClass("activeButton");
-       $(this).addClass("unativeButton");
-   }
 
-  });*/
 
-var showmorePro = document.getElementById('showmorePro');
+var btnTech = $('.btnT');
 
-showmorePro.addEventListener('click', function () {
-    var section = document.getElementById('projects');
-    var article = document.getElementById('ulpro');
-    section.style.height = parseInt(article.scrollHeight)+200+"px";
-    console.log(article.scrollHeight);
-    console.log('zdqz');
+btnTech.each(function () {
+    
+    $(this).click(function () {
+        
+        if ($(this).hasClass('unativeButton')) {
+            console.log('qzdq');
+            $(this).removeClass('unativeButton');
+            $(this).addClass('ativeButton');
+        
+        }
+        else if ($(this).hasClass('ativeButton')) {
+        
+            $(this).removeClass('ativeButton');
+            $(this).addClass('unativeButton');
+        
+        }
+    })
+
+
 })
 
-function adjust_textarea(h) {
-	h.style.height = "20px";
-	h.style.height = (h.scrollHeight)+"px";
-}
 
-  
+    //
+    var fullheight = $('#projects article')[0].scrollHeight + 350 + "px";
+    var originalheight = $('#projects').height();
+    $('#showmorepro').on('click', function () {
+        if ($('#showmorepro').hasClass("less")) {
+            $('#showmorepro').removeClass('less');
+        
+            $('#projects').animate({
+                height: fullheight
+            }, 1000, function () {
+                //animation complete
+                $('#showmorepro').find('img').attr('src', "arrow_up.png");
+                $('#showmorepro').addClass('more');
+                    
+            });
+        
+        }
+        else if ($('#showmorepro').hasClass("more")) {
+            $('#showmorepro').removeClass('more');
+            $('#projects').animate({
+                height: originalheight
+            }, 1000, function () {
+                //animation complete
+                $('#showmorepro').find('img').attr('src', "arrow_down.png");
+                $('#showmorepro').addClass('less');
+                    
+            });
+        
+        }
+    
+    });
+
+    var blogfullheight = $('#blog article')[0].scrollHeight + 300 + "px";
+    var blogoriginalheight = $('#blog').height();
+    $('#showmoreblog').on('click', function () {
+        if ($('#showmoreblog').hasClass("less")) {
+            $('#showmoreblog').removeClass('less');
+
+            $('#blog').animate({
+                height: blogfullheight
+            }, 1000, function () {
+                //animation complete
+                $('#showmoreblog').find('img').attr('src', "arrow_up.png");
+                $('#showmoreblog').addClass('more');
+
+            });
+
+        }
+        else if ($('#showmoreblog').hasClass("more")) {
+            $('#showmoreblog').removeClass('more');
+            $('#blog').animate({
+                height: blogoriginalheight
+            }, 1000, function () {
+                //animation complete
+                $('#showmoreblog').find('img').attr('src', "arrow_down.png");
+                $('#showmoreblog').addClass('less');
+
+            });
+
+        }
+
+    });
+
+
+    var triggerAtY = $('#skills').offset().top - $(window).outerHeight();
+
+    $(window).scroll(function (event) {
+        // #target not yet in view
+        if (triggerAtY > $(window).scrollTop()) {
+            return;
+        }
+
+
+        var elm = $('.ratioSkill');
+        console.log('scrolling');
+        elm.each(function () {
+            jQuery(this).find('div').animate({
+                width: jQuery(this).attr('data-percent') * 4
+            }, 1500);
+        });
+
+
+        // remove this event handler
+        $(this).off(event);
+    })
+
+    
