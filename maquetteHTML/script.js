@@ -7,7 +7,7 @@ let contact = document.getElementById('contact');
 
 var btnabout = document.getElementById('aabout');
 btnabout.addEventListener('click', function(){
-	about.scrollIntoView({behavior: "smooth"});
+    about.scrollIntoView({behavior: "smooth"});
 })
 
 var btnskills = document.getElementById('askills');
