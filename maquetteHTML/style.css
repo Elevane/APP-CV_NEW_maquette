@@ -3,7 +3,7 @@ IMPORTS
 */
 @import url('font/Roboto/Roboto-Light.ttf');
 @import url('font/Tomorrow/Tomorrow-Light.ttf');
-@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+/*@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
 /**@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
 /**  */
 *{
@@ -11,18 +11,18 @@ IMPORTS
     padding: 0;
     box-shadow: 0;
     font-family: 'Tomorrow','Roboto', sans-serif;
-    color: RGB(230, 230,230);
+    color: #DFDFDF;
 }
 #contactmebtn{
     padding: 20px;
     font-size: 30px;
-    color: #BC4949;
-    border: 0.3px solid #BC4949;
+    color: #DFDFDF;
+    border: 0.3px solid #DFDFDF;
     margin-top: 50px;
 }
 #contactmebtn:hover{
     border: 0.5px solid black;
-    background-color:#BC4949;
+    background-color:#DFDFDF;
     color: RGB(0,0,0);
     cursor: pointer;
 }
@@ -37,7 +37,7 @@ h1{
     font-size: 70px;
     padding-bottom: 30px;
     text-transform: uppercase;
-    margin: 30px;
+    margin-top: 50px;
 }
 
 #body{
@@ -65,10 +65,7 @@ nav{
     align-content: space-around;
     background-color: RGB(0,0,0,0.9);
 }
-.menu{
-    
-    
-}
+
 li > a > img{
     width: 15px;
     height: 15px;
@@ -147,51 +144,49 @@ nav li{
 /**/
 
 #skills{
-    height: 960px;
-    width: 85%;
+    height: 885px;
+    width: 80%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    
     align-items: center;
     }
 #skills article{
    width: 100%;
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
+    height: 60%;
+    margin-top: 30px;  
 }
-#skills li img, #skills li div img{
-    width: 30px;
-    height: 20px;
-}
+
 #skills article ul{
-   
-    list-style-type: none;
+    width: 100%;
+    height: 100%;
+    list-style: none;
     display: flex;
-    flex-wrap: wrap;
-    
     flex-direction: column;
+    flex-wrap: wrap;
+}
+#skills article ul li{
+    margin-bottom:45px ;
+    display: flex;
+}
+#skills .ratioSkill div{
+    margin-left: 30px;
+    border: 1px solid white;
     
 }
-#skills article ul li {
-    display: flex;
-    width: 300px;
-    height: 40px;
-    margin-bottom: 15px;
-}
+
+
 
 /********/
 #projects{
 
-    height: 960px;
+    height: 910px;
     width: 85%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: hidden;
+    
+    
 }
 
 
@@ -199,22 +194,19 @@ nav li{
     width: 250px;
     height: 300px;
     margin: 30px;
-
     border: 3px solid white;
     border-radius: 3px;
 
 }
 
-#projects img:hover{
-    opacity: 0.5;
-
+#quicksearch{
+    padding: 3px;
+    color: black;
 }
 #projects article{
     width: 100%;
-    height: 60%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
+    height: 100%;
+   overflow: hidden;
 }
 #projects > ul {
     display: flex;
@@ -231,25 +223,39 @@ nav li{
 }
 
 
-#projects article ul{
+#showmorepro{
+    border: none;
+    background-color: black;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: flex-start;
+     flex-direction: column;
+     align-items: center;
+     font-size: 15px;
+     margin-top: 30px;
+     width: 100%;
 }
+
+#showmorepro img
+{
+    border: none;
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+}
+/***                              */
 
 #blog{
 
-    height: 960px;
+    height: 885px;
     width: 85%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    
     align-items: center;
-    margin: 50px;
+    
 }
-
+#blog > article{
+    overflow: hidden;
+}
 #blog img{
     width: 250px;
     height: 300px;
@@ -258,22 +264,30 @@ nav li{
     border-radius: 3px;
 
 }
-#blog article {
+#blog article article{
     display: flex;
     align-items: center;
+    margin-bottom: 50px;
 
 }
-#blog article p,#blog h3{
+#blog article article p,#blog h3{
 
     margin: 30px;
 
 
 }
 
+#blog #showmoreblog img{
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+
+}
 
 #contact{
 
-    height: 960px;
+    height: 800px;
     width: 85%;
     display: flex;
     flex-direction: row;
@@ -355,22 +369,32 @@ nav li{
 }
 footer{
     width: 100%;
-    height: 250px;
+    height: 160px;
     background-color: RGB(32,38,46);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
-
-.activeButton{
+.imgRs img{
+    width: 50px;
+    height: 50px;
+}
+.imgRs img:hover{
+    opacity: 0.5;
+}
+.ativeButton{
     color:black;
     background-color: antiquewhite;
     border: 1px solid white;
     padding: 3px;
-    border-radius: 3px;}
+   }
 
 .unativeButton{
     color:white;
     background-color: black;
     border: 1px solid white;
     padding: 3px;
-    border-radius: 3px;
+    ;
 }
 
