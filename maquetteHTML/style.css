@@ -3,8 +3,13 @@ IMPORTS
 */
 @import url('font/Roboto/Roboto-Light.ttf');
 @import url('font/Tomorrow/Tomorrow-Light.ttf');
+<<<<<<< HEAD
 /*@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
 /**@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+=======
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
 /**  */
 *{
     margin: 0;
@@ -144,7 +149,11 @@ nav li{
 /**/
 
 #skills{
+<<<<<<< HEAD
     height: 885px;
+=======
+    height: 855px;
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
     width: 80%;
     display: flex;
     flex-direction: column;
@@ -156,7 +165,14 @@ nav li{
     height: 60%;
     margin-top: 30px;  
 }
+<<<<<<< HEAD
 
+=======
+#skills li img, #skills li div img{
+    width: 30px;
+    height: 20px;
+}
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
 #skills article ul{
     width: 100%;
     height: 100%;
@@ -176,11 +192,18 @@ nav li{
 }
 
 
+<<<<<<< HEAD
 
 /********/
 #projects{
 
     height: 910px;
+=======
+/********/
+#projects{
+
+    height: 810px;
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -199,6 +222,7 @@ nav li{
 
 }
 
+<<<<<<< HEAD
 #quicksearch{
     padding: 3px;
     color: black;
@@ -207,6 +231,18 @@ nav li{
     width: 100%;
     height: 100%;
    overflow: hidden;
+=======
+
+#projects article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 40px;
+    margin-bottom: 60px;
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
 }
 #projects > ul {
     display: flex;
@@ -223,6 +259,16 @@ nav li{
 }
 
 
+<<<<<<< HEAD
+=======
+#projects article ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
 #showmorepro{
     border: none;
     background-color: black;
@@ -245,7 +291,11 @@ nav li{
 
 #blog{
 
+<<<<<<< HEAD
     height: 885px;
+=======
+    height: 865px;
+>>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
     width: 85%;
     display: flex;
     flex-direction: column;
