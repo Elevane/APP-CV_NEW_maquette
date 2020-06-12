@@ -3,13 +3,8 @@ IMPORTS
 */
 @import url('font/Roboto/Roboto-Light.ttf');
 @import url('font/Tomorrow/Tomorrow-Light.ttf');
-<<<<<<< HEAD
 /*@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
 /**@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
-=======
-@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Tomorrow&display=swap');
->>>>>>> e39fd9f7b2d078d65a3f9c57930608918f055ac5
 /**  */
 *{
     margin: 0;
